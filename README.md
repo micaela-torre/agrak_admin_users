@@ -69,3 +69,9 @@ React Query is heavily utilized to manage server state, including data fetching,
 ### Custom Hooks
 
 Custom hooks are used extensively to encapsulate and reuse logic across different parts of the application. This pattern promotes DRY (Don't Repeat Yourself) principles and makes complex logic easier to manage and test.
+
+### Recursive Components
+In the DetailsUserView, we employ a recursive component pattern to efficiently handle hierarchical data structures. This approach allows us to display nested user details dynamically, accommodating data structures of varying depths without redundant code.
+
+### Error Handling with ErrorBoundary
+To enhance the robustness of the application, we use the ErrorBoundary component. This component catches JavaScript errors anywhere in the child component tree, logs those errors, and displays a fallback UI instead of crashing the entire component tree. This practice is crucial for maintaining a smooth user experience even when unexpected errors occur.
